@@ -1,103 +1,318 @@
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
+import { ChevronRight, CuboidIcon as Cube, Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="min-h-screen">
+      {/* Navigation */}
+      <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16">
+        <div className="flex items-center gap-2">
+          <div className="h-10 w-10 rounded-full bg-[#cef0e9] flex items-center justify-center">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/placeholder.svg?height=40&width=40"
+              alt="Logo"
+              width={24}
+              height={24}
+              className="rounded-full"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        <div className="hidden md:flex items-center gap-8">
+          <Link href="#" className="text-[#191919] hover:text-[#089274]">
+            News
+          </Link>
+          <Link href="#" className="text-[#191919] hover:text-[#089274]">
+            Videos
+          </Link>
+          <Link href="#" className="text-[#191919] hover:text-[#089274]">
+            Deals
+          </Link>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <Link href="#subscribe" className="hidden md:block px-4 py-2 text-[#191919] hover:text-[#089274]">
+            Subscribe
+          </Link>
+          <Link
+            href="#contact"
+            className="px-4 py-2 bg-[#0bb791] text-white rounded-full hover:bg-[#089274] transition-colors"
+          >
+            Contact
+          </Link>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="bg-[#089274] text-white py-16 md:py-24 relative overflow-hidden">
+        <div className="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
+          <div className="max-w-xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Explore the Future of Smart Home Technology</h1>
+            <p className="mb-8 text-lg">
+              Welcome to our channel, where innovation meets convenience! Discover the latest in smart home tech and
+              watch our most popular videos to transform your living space.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="#watch"
+                className="px-6 py-3 bg-[#191919] text-white rounded-md hover:bg-black transition-colors"
+              >
+                Watch Now
+              </Link>
+              <Link
+                href="#subscribe"
+                className="px-6 py-3 bg-[#cef0e9] text-[#089274] rounded-md hover:bg-white transition-colors"
+              >
+                Subscribe
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="absolute right-0 top-0 w-full h-full">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/placeholder.svg?height=600&width=800"
+            alt="Smart home"
+            width={800}
+            height={600}
+            className="object-cover h-full ml-auto"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        </div>
+      </section>
+
+      {/* Videos Section */}
+      <section className="bg-[#cef0e9] py-16 md:py-24">
+        <div className="container mx-auto px-4 md:px-8 lg:px-16 text-center">
+          <span className="text-[#089274] font-medium">Explore</span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-[#191919]">
+            Discover Our Latest Smart Home Videos
+          </h2>
+          <p className="max-w-2xl mx-auto mb-16 text-[#191919]">
+            Stay updated with our recent videos showcasing innovative smart home technology. Dive into the world of tech
+            with us!
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="md:col-span-2 flex justify-center">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="People discussing smart home technology"
+                width={600}
+                height={400}
+                className="rounded-lg object-cover"
+              />
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm text-left">
+              <div className="flex justify-center mb-4">
+                <Cube className="h-8 w-8 text-[#089274]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Smart Lighting Solutions</h3>
+              <p className="text-sm text-[#191919] text-center">
+                Transform your home with intelligent lighting that adapts to your lifestyle and preferences.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm text-left">
+              <div className="flex justify-center mb-4">
+                <Cube className="h-8 w-8 text-[#089274]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Home Security Innovations</h3>
+              <p className="text-sm text-[#191919] text-center">
+                Protect your home with cutting-edge security systems that offer peace of mind and convenience.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm text-left">
+              <div className="flex justify-center mb-4">
+                <Cube className="h-8 w-8 text-[#089274]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Smart Thermostat Review</h3>
+              <p className="text-sm text-[#191919] text-center">
+                Optimize your energy usage with our comprehensive review of the latest smart thermostats.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm text-left">
+              <div className="flex justify-center mb-4">
+                <Cube className="h-8 w-8 text-[#089274]" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Watch More Videos</h3>
+              <p className="text-sm text-[#191919] text-center">
+                Join us for more exciting content on smart home technology and tips for your lifestyle.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="#learn"
+              className="px-6 py-3 bg-white text-[#191919] border border-[#f2f2f2] rounded-md hover:bg-[#f2f2f2] transition-colors"
+            >
+              Learn More
+            </Link>
+            <Link
+              href="#signup"
+              className="px-6 py-3 bg-white text-[#191919] border border-[#f2f2f2] rounded-md hover:bg-[#f2f2f2] transition-colors flex items-center gap-2"
+            >
+              Sign Up <ChevronRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Stay Updated Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-8 lg:px-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#191919]">Stay Updated with Our Content</h2>
+          <p className="max-w-2xl mx-auto mb-8 text-[#191919]">
+            Subscribe now for the latest smart home tech updates and exclusive content delivered straight to you!
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <Link
+              href="#subscribe"
+              className="px-6 py-3 bg-[#0bb791] text-white rounded-md hover:bg-[#089274] transition-colors"
+            >
+              Subscribe
+            </Link>
+            <Link
+              href="#learn"
+              className="px-6 py-3 bg-white text-[#191919] border border-[#f2f2f2] rounded-md hover:bg-[#f2f2f2] transition-colors"
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-white border-t border-[#f2f2f2] pt-16 pb-8">
+        <div className="container mx-auto px-4 md:px-8 lg:px-16">
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
+            <div>
+              <div className="text-2xl font-bold mb-6">Logo</div>
+              <p className="text-sm mb-6 text-[#191919]">
+                Subscribe to our newsletter for the latest updates on smart home innovations.
+              </p>
+              <form className="flex flex-col sm:flex-row gap-2">
+                <input
+                  type="email"
+                  placeholder="Your Email Here"
+                  className="px-4 py-2 border border-[#f2f2f2] rounded-md focus:outline-none focus:ring-2 focus:ring-[#089274]"
+                />
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-[#191919] text-white rounded-md hover:bg-black transition-colors"
+                >
+                  Join
+                </button>
+              </form>
+              <p className="text-xs mt-2 text-[#191919]">
+                By subscribing, you consent to our Privacy Policy and agree to receive updates.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-bold mb-4 text-[#191919]">Quick Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="#" className="text-sm hover:text-[#089274]">
+                    Home Page
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-[#089274]">
+                    Latest Videos
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-[#089274]">
+                    Tech News
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-[#089274]">
+                    Best Deals
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-[#089274]">
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-bold mb-4 text-[#191919]">Connect With Us</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="#" className="text-sm hover:text-[#089274]">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-[#089274]">
+                    Support Center
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-[#089274]">
+                    FAQs
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-[#089274]">
+                    Blog Posts
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-[#089274]">
+                    User Reviews
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-bold mb-4 text-[#191919]">Follow Us</h3>
+              <div className="flex flex-wrap gap-4">
+                <Link href="#" className="text-[#191919] hover:text-[#089274]">
+                  <Facebook className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="text-[#191919] hover:text-[#089274]">
+                  <Instagram className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="text-[#191919] hover:text-[#089274]">
+                  <Twitter className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="text-[#191919] hover:text-[#089274]">
+                  <Linkedin className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="text-[#191919] hover:text-[#089274]">
+                  <Youtube className="h-5 w-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-[#f2f2f2] pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-xs text-[#191919] mb-4 md:mb-0">© 2023 Art Genieals. All rights reserved.</p>
+            <div className="flex gap-4">
+              <Link href="#" className="text-xs hover:text-[#089274]">
+                Privacy Policy
+              </Link>
+              <Link href="#" className="text-xs hover:text-[#089274]">
+                Terms of Use
+              </Link>
+              <Link href="#" className="text-xs hover:text-[#089274]">
+                Cookie Settings
+              </Link>
+            </div>
+          </div>
+        </div>
       </footer>
-    </div>
-  );
+    </main>
+  )
 }
+
