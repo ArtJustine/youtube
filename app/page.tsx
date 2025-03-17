@@ -10,10 +10,9 @@ export default function Home() {
       <section className="bg-[#089274] text-white py-16 md:py-24 relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
           <div className="max-w-xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Explore the Future of Smart Home Technology</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Smart Living Made Simple</h1>
             <p className="mb-8 text-lg">
-              Welcome to our channel, where innovation meets convenience! Discover the latest in smart home tech and
-              watch our most popular videos to transform your living space.
+            Join me as I explore the world of smart homes and tech—so you can make the right choices without the hassle.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -64,54 +63,45 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="md:col-span-2 flex justify-center">
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="People discussing smart home technology"
-                width={600}
-                height={400}
-                className="rounded-lg object-cover"
-              />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vNSs8KUdkbw?si=rj66fkHVom5TVaxO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm text-left">
-              <div className="flex justify-center mb-4">
-                <Cube className="h-8 w-8 text-[#089274]" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Smart Lighting Solutions</h3>
-              <p className="text-sm text-[#191919] text-center">
-                Transform your home with intelligent lighting that adapts to your lifestyle and preferences.
-              </p>
-            </div>
+  <div className="flex justify-center mb-4">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/eWwWnPlT45o?si=iXd9R-gBs7TWlejf" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+  </div>
+  <h3 className="text-xl font-bold mb-3 text-center">My VERY Inexpensive EDC For 2025
+  </h3>
+</div>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm text-left">
-              <div className="flex justify-center mb-4">
-                <Cube className="h-8 w-8 text-[#089274]" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Home Security Innovations</h3>
-              <p className="text-sm text-[#191919] text-center">
-                Protect your home with cutting-edge security systems that offer peace of mind and convenience.
-              </p>
-            </div>
+<div className="bg-white p-6 rounded-lg shadow-sm text-left">
+  <div className="flex justify-center mb-4">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/56tNSPsvL2M?si=cQEyCLW19blJBX6n" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+  </div>
+  <h3 className="text-xl font-bold mb-3 text-center">Zemismart Matter Hub M1 for 2025? Not Really!
 
-            <div className="bg-white p-6 rounded-lg shadow-sm text-left">
-              <div className="flex justify-center mb-4">
-                <Cube className="h-8 w-8 text-[#089274]" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Smart Thermostat Review</h3>
-              <p className="text-sm text-[#191919] text-center">
-                Optimize your energy usage with our comprehensive review of the latest smart thermostats.
-              </p>
-            </div>
+  </h3>
+</div>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm text-left">
-              <div className="flex justify-center mb-4">
-                <Cube className="h-8 w-8 text-[#089274]" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Watch More Videos</h3>
-              <p className="text-sm text-[#191919] text-center">
-                Join us for more exciting content on smart home technology and tips for your lifestyle.
-              </p>
-            </div>
+<div className="bg-white p-6 rounded-lg shadow-sm text-left">
+  <div className="flex justify-center mb-4">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-sQOGQp-sb8?si=DL_uK4HzGN_Z90ak" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+  </div>
+  <h3 className="text-xl font-bold mb-3 text-center">Why I Replaced My HomePod Mini with Amazon Echo 4th Generation!
+
+
+  </h3>
+</div>
+
+<div className="bg-white p-6 rounded-lg shadow-sm text-left">
+  <div className="flex justify-center mb-4">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/8Bi-HxlKNHE?si=OUJjNTg2TaUh6Dcz" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+  </div>
+  <h3 className="text-xl font-bold mb-3 text-center">I used the iPhone 12 for over a Year! Worth it in 2025?
+
+
+  </h3>
+</div>
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
