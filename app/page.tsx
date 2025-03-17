@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronRight, CuboidIcon as Cube } from "lucide-react"
@@ -15,28 +16,36 @@ export default function Home() {
               watch our most popular videos to transform your living space.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="#watch"
+              <a
+                href="https://www.youtube.com/@Art_Gonzales/videos"
+                onClick={(e) => {
+                  e.preventDefault(); 
+                  window.open("https://www.youtube.com/@Art_Gonzales/videos", "_blank", "noopener,noreferrer");
+                }}
                 className="px-6 py-3 bg-[#191919] text-white rounded-md hover:bg-black transition-colors"
               >
                 Watch Now
-              </Link>
-              <Link
-                href="#subscribe"
+              </a>
+              <a
+                href="https://www.youtube.com/@Art_Gonzales"
+                onClick={(e) => {
+                  e.preventDefault(); 
+                  window.open("https://www.youtube.com/@Art_Gonzales", "_blank", "noopener,noreferrer");
+                }}
                 className="px-6 py-3 bg-[#cef0e9] text-[#089274] rounded-md hover:bg-white transition-colors"
               >
                 Subscribe
-              </Link>
+              </a>
             </div>
           </div>
         </div>
         <div className="absolute right-0 top-0 w-full h-full">
           <Image
-            src="/placeholder.svg?height=600&width=800"
+            src="/hero.svg?height=600&width=800"
             alt="Smart home"
-            width={800}
-            height={600}
-            className="object-cover h-full ml-auto"
+            layout="fill"
+            objectFit="cover"
+            className="object-cover h-full ml-auto opacity-60"
           />
         </div>
       </section>
@@ -130,12 +139,14 @@ export default function Home() {
             Subscribe now for the latest smart home tech updates and exclusive content delivered straight to you!
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <Link
-              href="#subscribe"
+            <a
+              href="https://www.youtube.com/@Art_Gonzales"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-[#0bb791] text-white rounded-md hover:bg-[#089274] transition-colors"
             >
               Subscribe
-            </Link>
+            </a>
             <Link
               href="#learn"
               className="px-6 py-3 bg-white text-[#191919] border border-[#f2f2f2] rounded-md hover:bg-[#f2f2f2] transition-colors"
