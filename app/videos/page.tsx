@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronDown, Clock, Filter, Play, Search, Tag } from "lucide-react"
+import { ChevronDown, Clock, Filter, Play, Tag } from "lucide-react"
 
 export default function VideosPage() {
   return (
