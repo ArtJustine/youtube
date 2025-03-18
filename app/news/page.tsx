@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Calendar, ChevronRight, Clock, Tag, Bookmark, Share2, Search, MessageSquare } from 'lucide-react';
+import { ArrowRight, Calendar, ChevronRight, Clock, Tag, Bookmark, Share2, MessageSquare } from 'lucide-react';
 
 export default function NewsPage() {
   return (
@@ -16,12 +16,8 @@ export default function NewsPage() {
               Stay informed with the latest developments, trends, and innovations in smart home technology.
             </p>
             <div className="relative max-w-xl mx-auto">
-              <input
-                type="text"
-                placeholder="Search news articles..."
-                className="w-full px-4 py-3 pl-10 rounded-md text-[#191919] focus:outline-none focus:ring-2 focus:ring-[#0bb791]"
-              />
-              <Search className="absolute left-3 top-3.5 h-5 w-5 text-gray-400" />
+  
+              
             </div>
           </div>
         </div>
