@@ -58,7 +58,7 @@ export default function DealsPage() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="absolute top-3 left-3 bg-[#0bb791] text-white text-sm font-bold px-3 py-1 rounded-full">
-                  30% OFF
+                  18% OFF
                 </div>
               </div>
               <div className="p-5">
@@ -72,8 +72,8 @@ export default function DealsPage() {
                 </div>
                 <h3 className="text-lg font-bold mb-1">Aqara G3 Camera Hub</h3>
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xl font-bold text-[#089274]">$139.99</span>
-                  <span className="text-sm line-through text-gray-500">$199.99</span>
+                  <span className="text-xl font-bold text-[#089274]">$89.99</span>
+                  <span className="text-sm line-through text-gray-500">$109.99</span>
                 </div>
                 <p className="text-sm text-gray-600 mb-4">
                   AI-powered security camera with 2K resolution, facial recognition, and automation hub.
