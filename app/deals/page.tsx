@@ -51,7 +51,7 @@ export default function DealsPage() {
             <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="/aqara g3.svg?height=200&width=400"
                   alt="Smart Thermostat"
                   width={400}
                   height={200}
@@ -70,16 +70,16 @@ export default function DealsPage() {
                   <Star className="h-4 w-4 text-gray-300" />
                   <span className="text-sm text-gray-500 ml-1">(42)</span>
                 </div>
-                <h3 className="text-lg font-bold mb-1">Smart Thermostat Pro</h3>
+                <h3 className="text-lg font-bold mb-1">Aqara G3 Camera Hub</h3>
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-xl font-bold text-[#089274]">$139.99</span>
                   <span className="text-sm line-through text-gray-500">$199.99</span>
                 </div>
                 <p className="text-sm text-gray-600 mb-4">
-                  Energy-efficient smart thermostat with voice control and learning capabilities.
+                  AI-powered security camera with 2K resolution, facial recognition, and automation hub.
                 </p>
                 <Link
-                  href="#"
+                  href="https://amzn.to/4bYji2h"
                   className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-[#0bb791] text-white rounded-md hover:bg-[#089274] transition-colors"
                 >
                   Buy Now <ArrowRight className="h-4 w-4" />
