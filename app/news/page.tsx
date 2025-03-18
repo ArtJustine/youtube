@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Calendar, ChevronRight, Clock, Search, Tag, Bookmark, Share2, MessageSquare } from 'lucide-react';
+import { ArrowRight, Calendar, ChevronRight, Clock, Tag, Bookmark, Share2, MessageSquare } from 'lucide-react';
 
 export default function NewsPage() {
   return (
