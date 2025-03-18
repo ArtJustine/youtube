@@ -285,7 +285,7 @@ export default function NewsPage() {
                     </h3>
                     <p className="text-sm text-gray-600 mb-3">
                       Smart refrigerators, ovens, and coffee makers are transforming how we prepare meals and 
-                      manage our kitchens. Here's what you need to know.
+                      manage our kitchens. Here&apos;s what you need to know.
                     </p>
                     <Link 
                       href="#" 
