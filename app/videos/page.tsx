@@ -111,7 +111,7 @@ export default function VideosPage() {
                   </p>
                   <p className="text-gray-700 mb-6">
                     We cover compatibility with major ecosystems including Amazon Alexa, Google Home, and Apple HomeKit,
-                    so you can choose the platform that works best for your needs. By the end of this tutorial, you'll
+                    so you can choose the platform that works best for your needs. By the end of this tutorial, you&apos;ll
                     have a fully functioning smart home hub that serves as the brain of your connected home.
                   </p>
                   <div className="mt-auto">
