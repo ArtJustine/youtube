@@ -51,7 +51,7 @@ export default function DealsPage() {
             <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="relative">
                 <Image
-                  src="/aqara g3.svg?height=200&width=400"
+                  src="/aqara g3.jpg?height=200&width=400"
                   alt="Smart Thermostat"
                   width={400}
                   height={200}
