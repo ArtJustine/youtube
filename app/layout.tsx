@@ -17,10 +17,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
-      <body className="overflow-x-hidden">
+    <html lang="en">
+      <body>
         {/* Navigation */}
-        <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16 w-full">
+        <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16">
           <div className="flex items-center gap-2">
             <Link href="/">
               <div className="h-10 w-10 rounded-full bg-[#cef0e9] flex items-center justify-center">
@@ -64,10 +64,10 @@ export default function RootLayout({
           </div>
         </nav>
 
-        <div className="overflow-x-hidden w-full">{children}</div>
+        {children}
 
         {/* Footer */}
-        <footer className="bg-white border-t border-[#f2f2f2] pt-16 pb-8 w-full overflow-x-hidden">
+        <footer className="bg-white border-t border-[#f2f2f2] pt-16 pb-8">
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
               <div>
