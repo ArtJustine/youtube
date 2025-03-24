@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden">
+      <body>
         {/* Navigation */}
         <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16 w-full bg-white shadow-sm">
           <div className="flex items-center gap-2">
