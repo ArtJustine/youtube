@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Calendar, ChevronRight, Clock, Tag, Bookmark, Share2, MessageSquare } from 'lucide-react';
+import Image from "next/image"
+import Link from "next/link"
+import { ArrowRight, Calendar, ChevronRight, Clock, Search, Tag, Bookmark, Share2, MessageSquare } from "lucide-react"
 
 export default function NewsPage() {
   return (
@@ -16,8 +16,12 @@ export default function NewsPage() {
               Stay informed with the latest developments, trends, and innovations in smart home technology.
             </p>
             <div className="relative max-w-xl mx-auto">
-  
-              
+              <input
+                type="text"
+                placeholder="Search news articles..."
+                className="w-full px-4 py-3 pl-10 rounded-md text-[#191919] focus:outline-none focus:ring-2 focus:ring-[#0bb791]"
+              />
+              <Search className="absolute left-3 top-3.5 h-5 w-5 text-gray-400" />
             </div>
           </div>
         </div>
@@ -94,7 +98,7 @@ export default function NewsPage() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                  <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-3">
                     <span className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" /> March 15, 2023
                     </span>
@@ -116,7 +120,7 @@ export default function NewsPage() {
                     interact with our living spaces. In this article, we explore the most significant trends that will shape 
                     the future of smart homes in 2023 and beyond.
                   </p>
-                  <div className="flex justify-between items-center">
+                  <div className="flex flex-wrap justify-between items-center gap-4">
                     <Link 
                       href="#" 
                       className="text-[#0bb791] font-medium hover:text-[#089274] transition-colors flex items-center gap-1"
@@ -152,7 +156,7 @@ export default function NewsPage() {
                     />
                   </div>
                   <div className="p-5">
-                    <div className="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                    <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500 mb-2">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" /> March 12, 2023
                       </span>
@@ -190,7 +194,7 @@ export default function NewsPage() {
                     />
                   </div>
                   <div className="p-5">
-                    <div className="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                    <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500 mb-2">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" /> March 10, 2023
                       </span>
@@ -228,7 +232,7 @@ export default function NewsPage() {
                     />
                   </div>
                   <div className="p-5">
-                    <div className="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                    <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500 mb-2">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" /> March 8, 2023
                       </span>
@@ -266,7 +270,7 @@ export default function NewsPage() {
                     />
                   </div>
                   <div className="p-5">
-                    <div className="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                    <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500 mb-2">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" /> March 5, 2023
                       </span>
@@ -281,7 +285,7 @@ export default function NewsPage() {
                     </h3>
                     <p className="text-sm text-gray-600 mb-3">
                       Smart refrigerators, ovens, and coffee makers are transforming how we prepare meals and 
-                      manage our kitchens. Here&apos;s what you need to know.
+                      manage our kitchens. Here's what you need to know.
                     </p>
                     <Link 
                       href="#" 
@@ -396,10 +400,11 @@ export default function NewsPage() {
                   <input 
                     type="email" 
                     placeholder="Your email address" 
-                    className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#089274]"
+                    className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 
+                    className=\"w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#089274]"
                   />
                   <button 
-                    type="submit" 
+                    type="submit"
                     className="w-full px-4 py-2 bg-[#0bb791] text-white rounded-md hover:bg-[#089274] transition-colors"
                   >
                     Subscribe
@@ -493,5 +498,6 @@ export default function NewsPage() {
         </div>
       </section>
     </main>
-  );
+  )
 }
+
