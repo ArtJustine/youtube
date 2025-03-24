@@ -17,10 +17,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="overflow-x-hidden">
+      <body className="overflow-x-hidden">
         {/* Navigation */}
-        <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16 w-full bg-white shadow-sm">
+        <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16 w-full">
           <div className="flex items-center gap-2">
             <Link href="/">
               <div className="h-10 w-10 rounded-full bg-[#cef0e9] flex items-center justify-center">
