@@ -1,12 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require("tailwindcss/defaultTheme")
-
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -52,45 +51,13 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // primary: "#0bb791",
-        // "primary-dark": "#089274",
-        // secondary: "#cef0e9",
-        // background: "#ffffff",
-        // foreground: "#191919",
-        // muted: "#f2f2f2",
-        // border: "#f2f2f2",
-        // input: "hsl(var(--input))",
-        // ring: "hsl(var(--ring))",
-        // background: "hsl(var(--background))", // Overwritten
-        // foreground: "hsl(var(--foreground))", // Overwritten
-        // primary: { // Overwritten
-        //   DEFAULT: "hsl(var(--primary))",
-        //   foreground: "hsl(var(--primary-foreground))",
-        // },
-        // secondary: { // Overwritten
-        //   DEFAULT: "hsl(var(--secondary))",
-        //   foreground: "hsl(var(--secondary-foreground))",
-        // },
-        // destructive: {
-        //   DEFAULT: "hsl(var(--destructive))",
-        //   foreground: "hsl(var(--destructive-foreground))",
-        // },
-        // muted: { // Overwritten
-        //   DEFAULT: "hsl(var(--muted))",
-        //   foreground: "hsl(var(--muted-foreground))",
-        // },
-        // accent: {
-        //   DEFAULT: "hsl(var(--accent))",
-        //   foreground: "hsl(var(--accent-foreground))",
-        // },
-        // popover: {
-        //   DEFAULT: "hsl(var(--popover))",
-        //   foreground: "hsl(var(--popover-foreground))",
-        // },
-        // card: {
-        //   DEFAULT: "hsl(var(--card))",
-        //   foreground: "hsl(var(--card-foreground))",
-        // },
+        primary: "#0bb791",
+        "primary-dark": "#089274",
+        secondary: "#cef0e9",
+        background: "#ffffff",
+        foreground: "#191919",
+        muted: "#f2f2f2",
+        border: "#f2f2f2",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -115,5 +82,4 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate")],
 }
-
 
