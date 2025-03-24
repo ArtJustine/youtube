@@ -4,7 +4,6 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react"
-import MobileNav from "@/components/mobile-nav"
 
 export const metadata: Metadata = {
   title: "Smart Home Technology",
@@ -22,17 +21,15 @@ export default function RootLayout({
         {/* Navigation */}
         <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16">
           <div className="flex items-center gap-2">
-            <Link href="/">
-              <div className="h-10 w-10 rounded-full bg-[#cef0e9] flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=40&width=40"
-                  alt="Logo"
-                  width={24}
-                  height={24}
-                  className="rounded-full"
-                />
-              </div>
-            </Link>
+            <div className="h-10 w-10 rounded-full bg-[#cef0e9] flex items-center justify-center">
+              <Image
+                src="/placeholder.svg?height=40&width=40"
+                alt="Logo"
+                width={24}
+                height={24}
+                className="rounded-full"
+              />
+            </div>
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -56,11 +53,10 @@ export default function RootLayout({
             </Link>
             <Link
               href="#contact"
-              className="hidden md:block px-4 py-2 bg-[#0bb791] text-white rounded-full hover:bg-[#089274] transition-colors"
+              className="px-4 py-2 bg-[#0bb791] text-white rounded-full hover:bg-[#089274] transition-colors"
             >
               Contact
             </Link>
-            <MobileNav />
           </div>
         </nav>
 
@@ -69,7 +65,7 @@ export default function RootLayout({
         {/* Footer */}
         <footer className="bg-white border-t border-[#f2f2f2] pt-16 pb-8">
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div className="grid md:grid-cols-4 gap-8 mb-12">
               <div>
                 <div className="text-2xl font-bold mb-6">Logo</div>
                 <p className="text-sm mb-6 text-[#191919]">
