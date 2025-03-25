@@ -29,7 +29,7 @@ export default function MobileNav() {
         <div className="fixed inset-0 z-50 bg-white">
           <div className="flex flex-col h-full">
             {/* Header */}
-            <div className="flex items-center justify-between p-4 border-b border-[#f2f2f2]">
+            <div className="flex items-center justify-between p-4 border-b border-gray-200">
               <div className="flex items-center gap-2">
                 <div className="h-10 w-10 rounded-full bg-[#cef0e9] flex items-center justify-center">
                   <Image
@@ -73,11 +73,11 @@ export default function MobileNav() {
             </nav>
 
             {/* Footer Actions */}
-            <div className="p-4 border-t border-[#f2f2f2]">
+            <div className="p-4 border-t border-gray-200">
               <div className="flex flex-col gap-3">
                 <Link
                   href="#subscribe"
-                  className="block w-full py-3 text-center text-[#191919] border border-[#f2f2f2] rounded-md hover:bg-[#f2f2f2]"
+                  className="block w-full py-3 text-center text-[#191919] border border-gray-200 rounded-md hover:bg-gray-100"
                   onClick={toggleMenu}
                 >
                   Subscribe

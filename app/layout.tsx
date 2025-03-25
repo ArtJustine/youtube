@@ -4,7 +4,6 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react"
-import MobileNav from "@/components/mobile-nav"
 
 export const metadata: Metadata = {
   title: "Smart Home Technology",
@@ -20,19 +19,17 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* Navigation */}
-        <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16 w-full bg-white shadow-sm">
+        <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16">
           <div className="flex items-center gap-2">
-            <Link href="/">
-              <div className="h-10 w-10 rounded-full bg-[#cef0e9] flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=40&width=40"
-                  alt="Logo"
-                  width={24}
-                  height={24}
-                  className="rounded-full"
-                />
-              </div>
-            </Link>
+            <div className="h-10 w-10 rounded-full bg-[#cef0e9] flex items-center justify-center">
+              <Image
+                src="/placeholder.svg?height=40&width=40"
+                alt="Logo"
+                width={24}
+                height={24}
+                className="rounded-full"
+              />
+            </div>
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -56,20 +53,19 @@ export default function RootLayout({
             </Link>
             <Link
               href="#contact"
-              className="hidden md:block px-4 py-2 bg-[#0bb791] text-white rounded-full hover:bg-[#089274] transition-colors"
+              className="px-4 py-2 bg-[#0bb791] text-white rounded-full hover:bg-[#089274] transition-colors"
             >
               Contact
             </Link>
-            <MobileNav />
           </div>
         </nav>
 
-        <div className="overflow-x-hidden w-full">{children}</div>
+        {children}
 
         {/* Footer */}
-        <footer className="bg-white border-t border-gray-200 pt-16 pb-8 w-full overflow-x-hidden">
+        <footer className="bg-white border-t border-[#f2f2f2] pt-16 pb-8">
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div className="grid md:grid-cols-4 gap-8 mb-12">
               <div>
                 <div className="text-2xl font-bold mb-6">Logo</div>
                 <p className="text-sm mb-6 text-[#191919]">
@@ -79,7 +75,7 @@ export default function RootLayout({
                   <input
                     type="email"
                     placeholder="Your Email Here"
-                    className="px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#089274]"
+                    className="px-4 py-2 border border-[#f2f2f2] rounded-md focus:outline-none focus:ring-2 focus:ring-[#089274]"
                   />
                   <button
                     type="submit"
@@ -177,7 +173,7 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <div className="border-t border-[#f2f2f2] pt-8 flex flex-col md:flex-row justify-between items-center">
               <p className="text-xs text-[#191919] mb-4 md:mb-0">© 2023 Art Genieals. All rights reserved.</p>
               <div className="flex gap-4">
                 <Link href="#" className="text-xs hover:text-[#089274]">

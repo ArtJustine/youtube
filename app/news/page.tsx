@@ -4,7 +4,7 @@ import { ArrowRight, Calendar, ChevronRight, Clock, Search, Tag, Bookmark, Share
 
 export default function NewsPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-[#f9f9f9]">
       {/* Hero Section */}
       <section className="bg-[#089274] text-white py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-8 lg:px-16">
@@ -26,7 +26,7 @@ export default function NewsPage() {
       </section>
 
       {/* News Categories */}
-      <div className="bg-white border-b border-gray-200">
+      <div className="bg-white border-b border-[#f2f2f2]">
         <div className="container mx-auto px-4 md:px-8 lg:px-16">
           <div className="flex overflow-x-auto py-4 gap-4 no-scrollbar">
             <Link
@@ -37,37 +37,37 @@ export default function NewsPage() {
             </Link>
             <Link
               href="#"
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
             >
               Smart Home
             </Link>
             <Link
               href="#"
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
             >
               Security
             </Link>
             <Link
               href="#"
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
             >
               Automation
             </Link>
             <Link
               href="#"
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
             >
               New Products
             </Link>
             <Link
               href="#"
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
             >
               Industry News
             </Link>
             <Link
               href="#"
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
             >
               Guides
             </Link>
@@ -96,7 +96,7 @@ export default function NewsPage() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-3">
+                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
                     <span className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" /> March 15, 2023
                     </span>
@@ -116,7 +116,7 @@ export default function NewsPage() {
                     we interact with our living spaces. In this article, we explore the most significant trends that
                     will shape the future of smart homes in 2023 and beyond.
                   </p>
-                  <div className="flex flex-wrap justify-between items-center gap-4">
+                  <div className="flex justify-between items-center">
                     <Link
                       href="#"
                       className="text-[#0bb791] font-medium hover:text-[#089274] transition-colors flex items-center gap-1"
@@ -152,7 +152,7 @@ export default function NewsPage() {
                     />
                   </div>
                   <div className="p-5">
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500 mb-2">
+                    <div className="flex items-center gap-3 text-xs text-gray-500 mb-2">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" /> March 12, 2023
                       </span>
@@ -188,7 +188,7 @@ export default function NewsPage() {
                     />
                   </div>
                   <div className="p-5">
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500 mb-2">
+                    <div className="flex items-center gap-3 text-xs text-gray-500 mb-2">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" /> March 10, 2023
                       </span>
@@ -224,7 +224,7 @@ export default function NewsPage() {
                     />
                   </div>
                   <div className="p-5">
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500 mb-2">
+                    <div className="flex items-center gap-3 text-xs text-gray-500 mb-2">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" /> March 8, 2023
                       </span>
@@ -260,7 +260,7 @@ export default function NewsPage() {
                     />
                   </div>
                   <div className="p-5">
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500 mb-2">
+                    <div className="flex items-center gap-3 text-xs text-gray-500 mb-2">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" /> March 5, 2023
                       </span>
@@ -287,7 +287,7 @@ export default function NewsPage() {
 
               {/* Load More Button */}
               <div className="flex justify-center mb-8">
-                <button className="px-6 py-3 bg-white border border-gray-200 text-[#191919] rounded-md hover:bg-gray-100 transition-colors">
+                <button className="px-6 py-3 bg-white border border-[#f2f2f2] text-[#191919] rounded-md hover:bg-[#f2f2f2] transition-colors">
                   Load More Articles
                 </button>
               </div>
@@ -297,7 +297,7 @@ export default function NewsPage() {
             <div className="lg:col-span-1">
               {/* Trending Now */}
               <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-                <h3 className="text-xl font-bold mb-4 pb-2 border-b border-gray-200">Trending Now</h3>
+                <h3 className="text-xl font-bold mb-4 pb-2 border-b border-[#f2f2f2]">Trending Now</h3>
                 <div className="space-y-4">
                   <div className="flex gap-3">
                     <div className="flex-shrink-0">
@@ -394,53 +394,53 @@ export default function NewsPage() {
 
               {/* Popular Tags */}
               <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-                <h3 className="text-xl font-bold mb-4 pb-2 border-b border-gray-200">Popular Tags</h3>
+                <h3 className="text-xl font-bold mb-4 pb-2 border-b border-[#f2f2f2]">Popular Tags</h3>
                 <div className="flex flex-wrap gap-2">
                   <Link
                     href="#"
-                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Smart Home
                   </Link>
                   <Link
                     href="#"
-                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Security
                   </Link>
                   <Link
                     href="#"
-                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Automation
                   </Link>
                   <Link
                     href="#"
-                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Voice Assistant
                   </Link>
                   <Link
                     href="#"
-                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Energy Saving
                   </Link>
                   <Link
                     href="#"
-                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Smart Lighting
                   </Link>
                   <Link
                     href="#"
-                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     IoT
                   </Link>
                   <Link
                     href="#"
-                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Smart Kitchen
                   </Link>

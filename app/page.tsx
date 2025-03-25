@@ -17,7 +17,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="#watch"
-                className="px-6 py-3 bg-[#191919] text-white rounded-md hover:bg-black transition-colors"
+                className="px-6 py-3 bg-[#191919] text-white rounded-md hover:bg-black transition-colors "
               >
                 Watch Now
               </Link>
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div className="absolute right-0 top-0 w-full h-full">
           <Image
-            src="/placeholder.svg?height=600&width=800"
+            src="/hero.svg?height=600&width=800"
             alt="Smart home"
             width={800}
             height={600}
