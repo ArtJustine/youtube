@@ -272,7 +272,7 @@ export default function Home() {
             <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-200">
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="/aqara g3.svg?height=200&width=400"
                   alt="Smart Thermostat"
                   width={400}
                   height={200}
