@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* Navigation */}
-        <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16">
+        <nav className="flex items-center justify-between px-4 py-3 md:px-8 lg:px-16 w-full bg-white shadow-sm">
           <div className="flex items-center gap-2">
             <Link href="/">
               <div className="h-10 w-10 rounded-full bg-[#cef0e9] flex items-center justify-center">
@@ -64,10 +64,10 @@ export default function RootLayout({
           </div>
         </nav>
 
-        {children}
+        <div className="overflow-x-hidden w-full">{children}</div>
 
         {/* Footer */}
-        <footer className="bg-white border-t border-[#f2f2f2] pt-16 pb-8">
+        <footer className="bg-white border-t border-gray-200 pt-16 pb-8 w-full overflow-x-hidden">
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
               <div>
@@ -79,7 +79,7 @@ export default function RootLayout({
                   <input
                     type="email"
                     placeholder="Your Email Here"
-                    className="px-4 py-2 border border-[#f2f2f2] rounded-md focus:outline-none focus:ring-2 focus:ring-[#089274]"
+                    className="px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#089274]"
                   />
                   <button
                     type="submit"
@@ -177,7 +177,7 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="border-t border-[#f2f2f2] pt-8 flex flex-col md:flex-row justify-between items-center">
+            <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
               <p className="text-xs text-[#191919] mb-4 md:mb-0">© 2023 Art Genieals. All rights reserved.</p>
               <div className="flex gap-4">
                 <Link href="#" className="text-xs hover:text-[#089274]">
