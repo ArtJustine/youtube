@@ -4,14 +4,12 @@ import { ArrowRight, Calendar, ChevronRight, Clock, Search, Tag, Bookmark, Share
 
 export default function NewsPage() {
   return (
-    <main className="min-h-screen bg-[#f9f9f9]">
+    <main className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="bg-[#089274] text-white py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-8 lg:px-16">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              Smart Home News & Insights
-            </h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">Smart Home News & Insights</h1>
             <p className="text-lg mb-8">
               Stay informed with the latest developments, trends, and innovations in smart home technology.
             </p>
@@ -28,48 +26,48 @@ export default function NewsPage() {
       </section>
 
       {/* News Categories */}
-      <div className="bg-white border-b border-[#f2f2f2]">
+      <div className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 md:px-8 lg:px-16">
           <div className="flex overflow-x-auto py-4 gap-4 no-scrollbar">
-            <Link 
-              href="#" 
+            <Link
+              href="#"
               className="px-4 py-2 bg-[#0bb791] text-white rounded-full hover:bg-[#089274] transition-colors whitespace-nowrap"
             >
               All News
             </Link>
-            <Link 
-              href="#" 
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
+            <Link
+              href="#"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
             >
               Smart Home
             </Link>
-            <Link 
-              href="#" 
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
+            <Link
+              href="#"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
             >
               Security
             </Link>
-            <Link 
-              href="#" 
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
+            <Link
+              href="#"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
             >
               Automation
             </Link>
-            <Link 
-              href="#" 
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
+            <Link
+              href="#"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
             >
               New Products
             </Link>
-            <Link 
-              href="#" 
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
+            <Link
+              href="#"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
             >
               Industry News
             </Link>
-            <Link 
-              href="#" 
-              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-[#f2f2f2] hover:bg-[#f2f2f2] transition-colors whitespace-nowrap"
+            <Link
+              href="#"
+              className="px-4 py-2 bg-white text-[#191919] rounded-full border border-gray-200 hover:bg-gray-100 transition-colors whitespace-nowrap"
             >
               Guides
             </Link>
@@ -110,19 +108,17 @@ export default function NewsPage() {
                     </span>
                   </div>
                   <h2 className="text-2xl md:text-3xl font-bold mb-3 hover:text-[#089274] transition-colors">
-                    <Link href="#">
-                      The Future of Smart Home Technology: Trends to Watch in 2023
-                    </Link>
+                    <Link href="#">The Future of Smart Home Technology: Trends to Watch in 2023</Link>
                   </h2>
                   <p className="text-gray-700 mb-4">
-                    Smart home technology continues to evolve at a rapid pace, with new innovations emerging regularly. 
-                    From AI-powered assistants to energy-efficient solutions, the smart home landscape is changing how we 
-                    interact with our living spaces. In this article, we explore the most significant trends that will shape 
-                    the future of smart homes in 2023 and beyond.
+                    Smart home technology continues to evolve at a rapid pace, with new innovations emerging regularly.
+                    From AI-powered assistants to energy-efficient solutions, the smart home landscape is changing how
+                    we interact with our living spaces. In this article, we explore the most significant trends that
+                    will shape the future of smart homes in 2023 and beyond.
                   </p>
                   <div className="flex flex-wrap justify-between items-center gap-4">
-                    <Link 
-                      href="#" 
+                    <Link
+                      href="#"
                       className="text-[#0bb791] font-medium hover:text-[#089274] transition-colors flex items-center gap-1"
                     >
                       Read Full Article <ArrowRight className="h-4 w-4" />
@@ -165,16 +161,14 @@ export default function NewsPage() {
                       </span>
                     </div>
                     <h3 className="text-lg font-bold mb-2 hover:text-[#089274] transition-colors">
-                      <Link href="#">
-                        New Study Shows Smart Security Systems Reduce Break-ins by 60%
-                      </Link>
+                      <Link href="#">New Study Shows Smart Security Systems Reduce Break-ins by 60%</Link>
                     </h3>
                     <p className="text-sm text-gray-600 mb-3">
-                      A recent study by the Home Security Association reveals that homes with smart security systems 
+                      A recent study by the Home Security Association reveals that homes with smart security systems
                       experience significantly fewer break-ins compared to those without.
                     </p>
-                    <Link 
-                      href="#" 
+                    <Link
+                      href="#"
                       className="text-[#0bb791] text-sm font-medium hover:text-[#089274] transition-colors"
                     >
                       Read More
@@ -203,16 +197,14 @@ export default function NewsPage() {
                       </span>
                     </div>
                     <h3 className="text-lg font-bold mb-2 hover:text-[#089274] transition-colors">
-                      <Link href="#">
-                        Leading Tech Company Unveils Next-Generation Smart Speaker
-                      </Link>
+                      <Link href="#">Leading Tech Company Unveils Next-Generation Smart Speaker</Link>
                     </h3>
                     <p className="text-sm text-gray-600 mb-3">
-                      The latest smart speaker features enhanced sound quality, improved voice recognition, and 
-                      seamless integration with other smart home devices.
+                      The latest smart speaker features enhanced sound quality, improved voice recognition, and seamless
+                      integration with other smart home devices.
                     </p>
-                    <Link 
-                      href="#" 
+                    <Link
+                      href="#"
                       className="text-[#0bb791] text-sm font-medium hover:text-[#089274] transition-colors"
                     >
                       Read More
@@ -241,16 +233,14 @@ export default function NewsPage() {
                       </span>
                     </div>
                     <h3 className="text-lg font-bold mb-2 hover:text-[#089274] transition-colors">
-                      <Link href="#">
-                        Smart Energy Solutions Could Save Homeowners $500 Annually
-                      </Link>
+                      <Link href="#">Smart Energy Solutions Could Save Homeowners $500 Annually</Link>
                     </h3>
                     <p className="text-sm text-gray-600 mb-3">
-                      New research indicates that implementing smart energy solutions in your home could lead to 
+                      New research indicates that implementing smart energy solutions in your home could lead to
                       significant cost savings on utility bills.
                     </p>
-                    <Link 
-                      href="#" 
+                    <Link
+                      href="#"
                       className="text-[#0bb791] text-sm font-medium hover:text-[#089274] transition-colors"
                     >
                       Read More
@@ -279,16 +269,14 @@ export default function NewsPage() {
                       </span>
                     </div>
                     <h3 className="text-lg font-bold mb-2 hover:text-[#089274] transition-colors">
-                      <Link href="#">
-                        The Rise of Smart Kitchen Appliances: Convenience Meets Innovation
-                      </Link>
+                      <Link href="#">The Rise of Smart Kitchen Appliances: Convenience Meets Innovation</Link>
                     </h3>
                     <p className="text-sm text-gray-600 mb-3">
-                      Smart refrigerators, ovens, and coffee makers are transforming how we prepare meals and 
-                      manage our kitchens. Here's what you need to know.
+                      Smart refrigerators, ovens, and coffee makers are transforming how we prepare meals and manage our
+                      kitchens. Here's what you need to know.
                     </p>
-                    <Link 
-                      href="#" 
+                    <Link
+                      href="#"
                       className="text-[#0bb791] text-sm font-medium hover:text-[#089274] transition-colors"
                     >
                       Read More
@@ -299,7 +287,7 @@ export default function NewsPage() {
 
               {/* Load More Button */}
               <div className="flex justify-center mb-8">
-                <button className="px-6 py-3 bg-white border border-[#f2f2f2] text-[#191919] rounded-md hover:bg-[#f2f2f2] transition-colors">
+                <button className="px-6 py-3 bg-white border border-gray-200 text-[#191919] rounded-md hover:bg-gray-100 transition-colors">
                   Load More Articles
                 </button>
               </div>
@@ -309,7 +297,7 @@ export default function NewsPage() {
             <div className="lg:col-span-1">
               {/* Trending Now */}
               <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-                <h3 className="text-xl font-bold mb-4 pb-2 border-b border-[#f2f2f2]">Trending Now</h3>
+                <h3 className="text-xl font-bold mb-4 pb-2 border-b border-gray-200">Trending Now</h3>
                 <div className="space-y-4">
                   <div className="flex gap-3">
                     <div className="flex-shrink-0">
@@ -323,9 +311,7 @@ export default function NewsPage() {
                     </div>
                     <div>
                       <h4 className="font-bold text-sm hover:text-[#089274] transition-colors">
-                        <Link href="#">
-                          Smart Home Market Expected to Reach $135 Billion by 2025
-                        </Link>
+                        <Link href="#">Smart Home Market Expected to Reach $135 Billion by 2025</Link>
                       </h4>
                       <p className="text-xs text-gray-500 mt-1">March 14, 2023</p>
                     </div>
@@ -342,9 +328,7 @@ export default function NewsPage() {
                     </div>
                     <div>
                       <h4 className="font-bold text-sm hover:text-[#089274] transition-colors">
-                        <Link href="#">
-                          5 Ways to Secure Your Smart Home Devices Against Hackers
-                        </Link>
+                        <Link href="#">5 Ways to Secure Your Smart Home Devices Against Hackers</Link>
                       </h4>
                       <p className="text-xs text-gray-500 mt-1">March 13, 2023</p>
                     </div>
@@ -361,9 +345,7 @@ export default function NewsPage() {
                     </div>
                     <div>
                       <h4 className="font-bold text-sm hover:text-[#089274] transition-colors">
-                        <Link href="#">
-                          New Voice Assistant Features That Will Transform Your Daily Routine
-                        </Link>
+                        <Link href="#">New Voice Assistant Features That Will Transform Your Daily Routine</Link>
                       </h4>
                       <p className="text-xs text-gray-500 mt-1">March 11, 2023</p>
                     </div>
@@ -380,9 +362,7 @@ export default function NewsPage() {
                     </div>
                     <div>
                       <h4 className="font-bold text-sm hover:text-[#089274] transition-colors">
-                        <Link href="#">
-                          Industry Leaders Announce New Smart Home Compatibility Standard
-                        </Link>
+                        <Link href="#">Industry Leaders Announce New Smart Home Compatibility Standard</Link>
                       </h4>
                       <p className="text-xs text-gray-500 mt-1">March 9, 2023</p>
                     </div>
@@ -397,73 +377,70 @@ export default function NewsPage() {
                   Subscribe to our newsletter and receive the latest smart home news directly in your inbox.
                 </p>
                 <form className="space-y-3">
-                  <input 
-                    type="email" 
-                    placeholder="Your email address" 
-                    className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 
-                    className=\"w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#089274]"
+                  <input
+                    type="email"
+                    placeholder="Your email address"
+                    className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#089274]"
                   />
-                  <button 
+                  <button
                     type="submit"
                     className="w-full px-4 py-2 bg-[#0bb791] text-white rounded-md hover:bg-[#089274] transition-colors"
                   >
                     Subscribe
                   </button>
                 </form>
-                <p className="text-xs text-[#191919] mt-3">
-                  We respect your privacy. Unsubscribe at any time.
-                </p>
+                <p className="text-xs text-[#191919] mt-3">We respect your privacy. Unsubscribe at any time.</p>
               </div>
 
               {/* Popular Tags */}
               <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-                <h3 className="text-xl font-bold mb-4 pb-2 border-b border-[#f2f2f2]">Popular Tags</h3>
+                <h3 className="text-xl font-bold mb-4 pb-2 border-b border-gray-200">Popular Tags</h3>
                 <div className="flex flex-wrap gap-2">
-                  <Link 
-                    href="#" 
-                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                  <Link
+                    href="#"
+                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Smart Home
                   </Link>
-                  <Link 
-                    href="#" 
-                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                  <Link
+                    href="#"
+                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Security
                   </Link>
-                  <Link 
-                    href="#" 
-                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                  <Link
+                    href="#"
+                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Automation
                   </Link>
-                  <Link 
-                    href="#" 
-                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                  <Link
+                    href="#"
+                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Voice Assistant
                   </Link>
-                  <Link 
-                    href="#" 
-                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                  <Link
+                    href="#"
+                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Energy Saving
                   </Link>
-                  <Link 
-                    href="#" 
-                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                  <Link
+                    href="#"
+                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Smart Lighting
                   </Link>
-                  <Link 
-                    href="#" 
-                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                  <Link
+                    href="#"
+                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     IoT
                   </Link>
-                  <Link 
-                    href="#" 
-                    className="px-3 py-1 bg-[#f2f2f2] text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
+                  <Link
+                    href="#"
+                    className="px-3 py-1 bg-gray-100 text-[#191919] rounded-full text-sm hover:bg-[#0bb791] hover:text-white transition-colors"
                   >
                     Smart Kitchen
                   </Link>
@@ -485,8 +462,8 @@ export default function NewsPage() {
                   <p className="text-sm text-gray-600 mb-3">
                     Everything you need to begin your smart home journey. Includes hub, lights, and sensors.
                   </p>
-                  <Link 
-                    href="#" 
+                  <Link
+                    href="#"
                     className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-[#0bb791] text-white rounded-md hover:bg-[#089274] transition-colors"
                   >
                     Learn More <ChevronRight className="h-4 w-4" />
